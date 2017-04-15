@@ -1,0 +1,12 @@
+<p>
+  Technologies I Have Used:
+</p>
+
+<ul>
+	<li *ngFor = "let i of arr">{{i}}</li>
+</ul>
+<ul *ngIf = "isLying">
+	<li *ngFor = "let j of lyingArr">{{j}}</li>
+</ul>
+
+<button class="tech__lie-button" (click)="isLying = !isLying">Are you lying?</button>
